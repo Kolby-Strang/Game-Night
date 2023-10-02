@@ -1,1 +1,25 @@
 /* BASIC STYLES HERE */
+.player-card {
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+    display: flex;
+    border-radius: 10px;
+
+}
+
+.player-card>div>img {
+    width: 4em;
+    height: 4em;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid gold 3px;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+}

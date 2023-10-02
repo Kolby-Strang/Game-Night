@@ -12,7 +12,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
-  <title>Game-Night</title>
+  <title>Game Night</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
       <a class="navbar-brand ms-3" href="#">
         <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
           loading="lazy">
-        <span class="ms-2">Game-Night</span>
+        <span class="ms-2">Game Night</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,8 +38,34 @@
   </header>
 
   <!-- SECTION -->
-  <main id="router-view">
-    <!-- PRIMARY VIEWPORT -->
+  <main id="router-view ">
+    <div class="container-fluid p-5">
+
+      <section class="p-5">
+        <form onsubmit="app.GamePlayersController.makeNewPlayer(event)">
+          <label for="name">Name</label>
+          <input id="name" type="text" name="name" required>
+          <label for="icon">Profile Picture</label>
+          <input id="icon" type="url" name="icon" required>
+          <label for="color">Favorite Color</label>
+          <select name="color" id="color">
+            <option value="bg-primary">Blue</option>
+            <option value="bg-success">Green</option>
+            <option value="bg-warning">Orange</option>
+            <option value="bg-danger">Red</option>
+            <option value="bg-secondary" selected>Grey</option>
+          </select>
+          <button class="btn btn-primary d-block" type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section id="gamePlayersDump" class="row">
+        <!-- GAME PLAYERS POPULATE HERE -->
+      </section>
+
+    </div>
+
+
   </main>
 
   <!-- SECTION -->
